@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffaf3;
+  color: #2b1d1d;
+}
+
+
+/* ---------- CABEÇALHO ---------- */
+
+header {
+  background: #d81b4a;
+  color: white;
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 14px;
+  background: #a3163a;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: #7f102d;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+  background: #f5e9d8;
+  padding: 60px 24px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #d81b4a;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin: 12px 0 20px;
+  font-size: 18px;
+  max-width: 650px;
+}
+
+.botao {
+  background: #d81b4a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #a3163a;
+}
+
+
+/* ---------- CARDÁPIO ---------- */
+
+.cardapio {
+  padding: 40px 24px;
+}
+
+.cardapio h2,
+.promo h2,
+.pedido h2 {
+  color: #d81b4a;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+
+/* FLEXBOX DOS CARDS */
+
+.lista-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 2px solid #d81b4a;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+
+  flex: 1 1 210px;
+  max-width: 260px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px #0002;
+}
+
+.card .emoji {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: #2b1d1d;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card .preco {
+  color: #d81b4a;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* ---------- PROMOÇÕES ---------- */
+
+.promo {
+  background: #f5e9d8;
+  padding: 40px 24px;
+}
+
+.lista-promo {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+
+  flex: 1 1 220px;
+  font-weight: bold;
+}
+
+.promo-1 {
+  background: #a3163a;
+}
+
+.promo-2 {
+  background: #d81b4a;
+}
+
+.promo-3 {
+  background: #7f102d;
+}
+
+.promo-4 {
+  background: #b71940;
+}
+
+
+/* ---------- PEDIDO ---------- */
+
+.pedido {
+  padding: 40px 24px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.campo {
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-weight: bold;
+}
+
+.campo input,
+.campo select {
+  padding: 11px;
+  border: 2px solid #d81b4a;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: #7f102d;
+}
+
+
+/* ---------- RODAPÉ ---------- */
+
+footer {
+  background: #2b1d1d;
+  color: white;
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.redes {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.redes span {
+  background: #d81b4a;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+
+/* ---------- CELULAR ---------- */
+
+@media (max-width: 600px) {
+
+  header {
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+}

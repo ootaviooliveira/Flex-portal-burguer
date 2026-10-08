@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Burguer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🍔 Portal Burguer</div>
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#promo">Promoções</a>
+      <a href="#pedido">Pedido</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>O melhor burguer da turma!</h1>
+      <p>Monte seu pedido e deixe o layout com a sua cara usando Flexbox.</p>
+      <button class="botao">Fazer pedido</button>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+      <h2>Cardápio</h2>
+      <div class="lista-cards">
+
+        <div class="card">
+          <div class="emoji">🍔</div>
+          <h3>Clássico</h3>
+          <p>Pão, carne, queijo e salada.</p>
+          <p class="preco">R$ 18,00</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🥓</div>
+          <h3>Bacon Max</h3>
+          <p>Carne dupla, bacon crocante e cheddar.</p>
+          <p class="preco">R$ 26,00</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌱</div>
+          <h3>Veggie</h3>
+          <p>Hambúrguer de grão-de-bico e molho verde.</p>
+          <p class="preco">R$ 22,00</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🍟</div>
+          <h3>Batata Frita</h3>
+          <p>Porção crocante para dividir.</p>
+          <p class="preco">R$ 12,00</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="promo" id="promo">
+      <h2>Promoções</h2>
+      <div class="lista-promo">
+        <div class="promo-item promo-1">🔥 Combo Clássico + Refri por R$ 22</div>
+        <div class="promo-item promo-2">🎉 Quarta: batata grátis</div>
+        <div class="promo-item promo-3">⭐ Compre 2 e leve 3</div>
+      </div>
+    </section>
+
+    <section class="pedido" id="pedido">
+      <h2>Faça seu pedido</h2>
+
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+      </div>
+
+      <div class="campo">
+        <label for="lanche">Lanche</label>
+        <select id="lanche">
+          <option>Clássico</option>
+          <option>Bacon Max</option>
+          <option>Veggie</option>
+          <option>Batata Frita</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="qtd">Quantidade</label>
+        <input type="number" id="qtd" value="1" min="1">
+      </div>
+
+      <button class="botao">Enviar pedido</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>#portalburguer - É só praticar!</p>
+    <div class="redes">
+      <span>Instagram</span>
+      <span>TikTok</span>
+      <span>WhatsApp</span>
+    </div>
+  </footer>
+
+</body>
+</html>
